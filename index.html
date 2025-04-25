@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JavaScript Concepts Demonstration</h1>
+    
+    <!-- Event Listeners Section -->
+    <section id="event-listeners">
+        <h2>Event Listeners</h2>
+        <p>This box responds to multiple events:</p>
+        <div class="event-box" id="interactive-box">
+            Hover or Click Me!
+        </div>
+        <p>Try these actions:</p>
+        <ul>
+            <li>Hover over the box</li>
+            <li>Click the box</li>
+            <li>Double-click the box</li>
+            <li>Press any key on your keyboard</li>
+        </ul>
+        <button id="reset-box">Reset Box</button>
+    </section>
+    
+    <!-- Form Validation Section -->
+    <section id="form-validation">
+        <h2>Form Validation</h2>
+        <form id="demo-form">
+            <div>
+                <label for="name">Name (required, min 3 chars):</label>
+                <input type="text" id="name" name="name">
+                <div id="name-error" class="error hidden"></div>
+            </div>
+            
+            <div>
+                <label for="email">Email (must be valid):</label>
+                <input type="email" id="email" name="email">
+                <div id="email-error" class="error hidden"></div>
+            </div>
+            
+            <div>
+                <label for="password">Password (min 6 chars):</label>
+                <input type="password" id="password" name="password">
+                <div id="password-error" class="error hidden"></div>
+            </div>
+            
+            <div>
+                <label for="message">Message (max 200 chars):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <div id="message-error" class="error hidden"></div>
+            </div>
+            
+            <button type="submit">Submit Form</button>
+            <div id="form-success" class="success hidden">Form submitted successfully!</div>
+        </form>
+    </section>
+    
+    <!-- Interactive Elements Section -->
+    <section class="interactive-section">
+        <h2>Interactive Elements</h2>
+        
+        <div>
+            <h3>Color Picker</h3>
+            <p>Click a color to change the background:</p>
+            <div class="color-picker">
+                <div class="color-option" style="background-color: #f1c40f;" data-color="#f1c40f"></div>
+                <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+                <div class="color-option" style="background-color: #9b59b6;" data-color="#9b59b6"></div>
+                <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+                <div class="color-option" style="background-color: #3498db;" data-color="#3498db"></div>
+            </div>
+        </div>
+        
+        <div>
+            <h3>Counter</h3>
+            <div id="counter">0</div>
+            <div class="counter-buttons">
+                <button id="decrement">-</button>
+                <button id="increment">+</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        
+        <div>
+            <h3>Toggle Content</h3>
+            <button id="toggle-btn">Show Secret Message</button>
+            <p id="secret-message" class="hidden">Congratulations! You've found the secret message!</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
